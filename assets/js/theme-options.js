@@ -28,14 +28,6 @@ $(document).ready(function() {
             });
         });
     }
-    
-    $('#fixed-header-toggle').click(function(){
-        if (this.checked) {
-            $('body').addClass('fixed-header');
-        } else {
-            $('body').removeClass('fixed-header'); 
-        }
-    }) 
 
     /* HTML logo */
     $('#html-logo').click(function(){
@@ -57,13 +49,6 @@ $(document).ready(function() {
 }); // End document.ready
 
 $(window).load(function(){
-
-    /* Fixed header */
-    if ($('#fixed-header-toggle:checked').length > 0) {
-        $('body').addClass('fixed-header');
-    } else {
-        $('body').removeClass('fixed-header');     
-    }
 
     /* HTML logo */
     if ($('#html-logo:checked').length > 0) {
